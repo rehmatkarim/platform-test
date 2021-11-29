@@ -47,7 +47,7 @@ app.post('/upload', upload.single('file') , async (req, res) => {
       })
       // const dimensions = await sizeOf(url)
       row.picture = {
-        url,
+        url: imageUrl,
         width: dimensions.width,
         height: dimensions.height
       }
